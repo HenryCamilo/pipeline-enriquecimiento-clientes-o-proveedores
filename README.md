@@ -400,6 +400,7 @@ La app usa una barra de título personalizada con `decorations: false`. En i3, S
 Biomedical Engineer | Python Automation | AI-assisted Document Processing
 
 **Farid Prado**
+
 Nick: faridSprado
 Ingeniero Multimedia
 https://www.linkedin.com/in/faridprado/ 
