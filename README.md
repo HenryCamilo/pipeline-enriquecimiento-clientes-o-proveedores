@@ -402,6 +402,8 @@ Biomedical Engineer | Python Automation | AI-assisted Document Processing
 **Farid Prado**
 
 Nick: faridSprado
+
 Ingeniero Multimedia
+
 https://www.linkedin.com/in/faridprado/ 
 ---
