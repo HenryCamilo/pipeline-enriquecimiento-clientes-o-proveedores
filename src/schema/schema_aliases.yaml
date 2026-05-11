@@ -1,0 +1,162 @@
+# Alias definitions for automatic column detection.
+# Each canonical field lists all common alternative names (ES + EN).
+# Matching is case-insensitive and accent-insensitive.
+
+supplier_name:
+  - nombre
+  - nombre del proveedor
+  - razón social
+  - razon social
+  - nombre tercero
+  - nombre del tercero
+  - nombre empresa
+  - proveedor
+  - vendor
+  - supplier
+  - supplier name
+  - company name
+  - empresa
+  - entidad
+  - 1er nombre
+  - primer nombre
+  - business name
+  - full name
+  - denominacion social
+  - denominación social
+
+tax_id:
+  - nit
+  - documento
+  - identificación
+  - identificacion
+  - número de identificación
+  - numero de identificacion
+  - identification number
+  - identificationnumber
+  - tax id
+  - tax_id
+  - fiscal id
+  - vat number
+  - rut
+  - cédula
+  - cedula
+  - cc
+  - numero documento
+  - número documento
+  - id tributario
+  - id fiscal
+
+address:
+  - dirección
+  - direccion
+  - domicilio
+  - address
+  - dirección principal
+  - direccion principal
+  - sede
+  - calle
+  - dirección fiscal
+  - direccion fiscal
+  - dirección comercial
+  - direccion comercial
+  - domicilio fiscal
+  - ubicacion física
+  - ubicación física
+
+phone:
+  - teléfono
+  - telefono
+  - celular
+  - phone
+  - mobile
+  - tel
+  - pbx
+  - contacto
+  - numero de telefono
+  - número de teléfono
+  - teléfono contacto
+  - telefono contacto
+
+email:
+  - correo
+  - email
+  - e-mail
+  - mail
+  - correo electrónico
+  - correo electronico
+  - email rut
+  - email_rut
+  - correo corporativo
+  - e mail
+  - dirección de correo
+
+city:
+  - ciudad
+  - ubicación
+  - ubicacion
+  - municipio
+  - city
+  - location
+  - localidad
+  - ciudad municipio
+  - ciudad y departamento
+  - ciudad departamento
+
+city_code:
+  - código ciudad
+  - codigo ciudad
+  - cod ciudad
+  - codciudad
+  - city code
+  - código postal
+  - codigo postal
+  - postal code
+  - zip code
+  - cod_ciudad
+
+person_type:
+  - tipo persona
+  - persontype
+  - person type
+  - tipo de persona
+  - tipo contribuyente
+  - tipo_persona
+  - person_type
+
+retention_type:
+  - tipo retención
+  - tipo retencion
+  - retentiontype
+  - retention type
+  - retencion
+  - tipo de retención
+  - retention_type
+
+contribution_type:
+  - tipo contribución
+  - tipo contribucion
+  - contributiontype
+  - contribution type
+  - régimen
+  - regimen
+  - tipo regimen
+  - tipo de contribución
+  - contribution_type
+
+state_enterprise_type:
+  - tipo empresa estatal
+  - stateenterprisetype
+  - state enterprise type
+  - empresa estatal
+  - tipo empresa del estado
+  - state_enterprise_type
+
+electronic_biller:
+  - facturador electrónico
+  - facturador electronico
+  - electronicbiller
+  - electronic biller
+  - facturación electrónica
+  - facturacion electronica
+  - es facturador
+  - electronic_biller

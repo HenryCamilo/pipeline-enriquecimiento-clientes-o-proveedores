@@ -1,0 +1,88 @@
+/*
+ * windows.css — Overrides para Windows (Fluent Design System).
+ * Activa con [data-platform="windows"] en el elemento raíz.
+ */
+
+[data-platform="windows"] {
+  /* ── Tipografía ── */
+  --app-font:           'Segoe UI Variable', 'Segoe UI', system-ui, sans-serif;
+  --app-font-mono:      'Cascadia Code', 'Consolas', monospace;
+
+  /* ── Fondos (Mica/Acrylic-inspired) ── */
+  --app-bg:             #f3f3f3;
+  --app-surface:        rgba(255, 255, 255, 0.85);
+  --app-surface-2:      rgba(249, 249, 249, 0.90);
+  --app-surface-raised: #ffffff;
+  --app-sidebar-bg:     rgba(243, 243, 243, 0.95);
+  --app-titlebar-bg:    rgba(243, 243, 243, 0.98);
+
+  /* ── Texto ── */
+  --app-text:           #1a1a1a;
+  --app-text-muted:     #605e5c;
+  --app-text-disabled:  #a19f9d;
+  --app-text-inverse:   #ffffff;
+
+  /* ── Acento / primario (Windows Blue) ── */
+  --app-primary:        #0078d4;
+  --app-primary-hover:  #106ebe;
+  --app-primary-active: #005a9e;
+  --app-primary-subtle: #cce4f6;
+  --app-primary-text:   #ffffff;
+
+  /* ── Estado ── */
+  --app-success:        #107c10;
+  --app-success-subtle: #dff6dd;
+  --app-warning:        #d83b01;
+  --app-warning-subtle: #fed9cc;
+  --app-danger:         #a4262c;
+  --app-danger-subtle:  #fde7e9;
+
+  /* ── Bordes (Fluent: muy sutiles) ── */
+  --app-border:         rgba(0, 0, 0, 0.08);
+  --app-border-strong:  rgba(0, 0, 0, 0.14);
+
+  /* ── Radios (Fluent: pequeños) ── */
+  --app-radius-xs:      2px;
+  --app-radius-sm:      4px;
+  --app-radius:         4px;
+  --app-radius-lg:      6px;
+  --app-radius-xl:      8px;
+  --app-radius-full:    9999px;
+
+  /* ── Sombras (Fluent: sutiles y elevadas) ── */
+  --app-shadow-sm:      0 1px 2px rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.04);
+  --app-shadow:         0 2px 4px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --app-shadow-md:      0 4px 8px rgba(0, 0, 0, 0.10), 0 2px 4px rgba(0, 0, 0, 0.06);
+  --app-shadow-lg:      0 8px 16px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.08);
+
+  /* ── Layout ── */
+  --app-titlebar-height:  32px;
+  --app-sidebar-width:    220px;
+  --app-content-max-w:    1100px;
+
+  /* ── Transiciones (Fluent: ligeramente más rápido) ── */
+  --app-transition:       100ms ease;
+  --app-transition-slow:  200ms ease;
+}
+
+/* Focus ring al estilo Windows — cuadrado con offset */
+[data-platform="windows"] *:focus-visible {
+  outline: 2px solid var(--app-primary);
+  outline-offset: 1px;
+  border-radius: 0;
+}
+
+/* Scrollbar estilo Windows — delgada con flecha */
+[data-platform="windows"] .ap-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
+[data-platform="windows"] .ap-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.20);
+  border-radius: 3px;
+}
+[data-platform="windows"] .ap-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.35);
+}
+
+/* Botón primario — Fluent usa sombra de acción */
+[data-platform="windows"] .ap-btn-primary {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.20) inset;
+}

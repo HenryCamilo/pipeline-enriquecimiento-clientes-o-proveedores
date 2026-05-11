@@ -1,0 +1,118 @@
+# ══════════════════════════════════════════════════════════════════════════════
+#  .gitignore — project_act_proveedores
+#  Backend Python + Tauri (Rust) + React / TypeScript
+# ══════════════════════════════════════════════════════════════════════════════
+
+# ── Datos reales (solo se sube la estructura de carpetas) ─────────────────────
+data/raw/excel/*.xlsx
+data/raw/excel/*.xls
+data/raw/excel/*.xlsm
+data/raw/excel/*.csv
+data/raw/facturas/*.pdf
+data/raw/facturas/*.PDF
+
+# Carpetas de salida generadas por el pipeline
+data/output/
+data/processed/
+data/temp/
+
+# ── Variables de entorno / secretos ──────────────────────────────────────────
+.env
+.env.*
+!.env.example
+secrets.yaml
+secrets.json
+*.secret
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# Entornos virtuales
+venv/
+.venv/
+env/
+ENV/
+.env.bak
+Pipfile.lock
+
+# Herramientas de análisis
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb
+
+# ── Caché pipeline (solo raíz y carpetas de datos, no el módulo src/cache/) ───
+.cache/
+/cache/
+*.cache
+pipeline_cache/
+
+# ── Node / Frontend ───────────────────────────────────────────────────────────
+desktop-app/node_modules/
+desktop-app/dist/
+desktop-app/.vite/
+
+# ── Tauri / Rust ──────────────────────────────────────────────────────────────
+desktop-app/src-tauri/target/
+
+# Schemas autogenerados por Tauri (se regeneran con `cargo build`)
+desktop-app/src-tauri/gen/schemas/
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── Archivos temporales del pipeline ─────────────────────────────────────────
+/tmp/act_proveedores_*.json
+act_proveedores_config.json
+
+# ── Sistema operativo ─────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# ── IDEs ──────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── WSL / Windows paths ───────────────────────────────────────────────────────
+*.lnk
+*:Zone.Identifier

@@ -1,0 +1,25 @@
+# Perfil de mapeo por defecto.
+# Columnas del Excel original → campos canónicos del pipeline.
+
+name: Default
+description: >
+  Perfil de mapeo por defecto. Úsalo como punto de partida
+  y ajusta los valores según la estructura de tu Excel.
+
+sheet_name: 0
+header_row: 0
+export_mode: original   # mantener estructura original del Excel
+
+mapping:
+  supplier_name:        "1er Nombre"
+  tax_id:               IdentificationNumber
+  address:              "Dirección"
+  phone:                Telefono
+  email:                Email Rut
+  city:                 "Ubicación"
+  city_code:            CodCiudad
+  person_type:          PersonType
+  retention_type:       RetentionType
+  contribution_type:    ContributionType
+  state_enterprise_type: StateEnterpriseType
+  electronic_biller:    ElectronicBiller

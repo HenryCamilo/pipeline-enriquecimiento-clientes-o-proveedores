@@ -1,0 +1,90 @@
+/*
+ * ubuntu.css — Overrides para Ubuntu/Linux (GNOME / Adwaita-inspired).
+ * Activa con [data-platform="ubuntu"] en el elemento raíz.
+ */
+
+[data-platform="ubuntu"] {
+  /* ── Tipografía ── */
+  --app-font:           'Ubuntu', 'Cantarell', system-ui, sans-serif;
+  --app-font-mono:      'Ubuntu Mono', 'Fira Code', monospace;
+
+  /* ── Fondos (Adwaita: sólidos, sin transparencias) ── */
+  --app-bg:             #f6f5f4;
+  --app-surface:        #ffffff;
+  --app-surface-2:      #f6f5f4;
+  --app-surface-raised: #ffffff;
+  --app-sidebar-bg:     #eeebe8;
+  --app-titlebar-bg:    #e8e4e0;
+
+  /* ── Texto ── */
+  --app-text:           #1a1a1a;
+  --app-text-muted:     #77767b;
+  --app-text-disabled:  #b0afb0;
+  --app-text-inverse:   #ffffff;
+
+  /* ── Acento / primario (GNOME Blue) ── */
+  --app-primary:        #3584e4;
+  --app-primary-hover:  #1c71d8;
+  --app-primary-active: #1a5fb4;
+  --app-primary-subtle: #d0e5f8;
+  --app-primary-text:   #ffffff;
+
+  /* ── Estado ── */
+  --app-success:        #26a269;
+  --app-success-subtle: #d3f0e3;
+  --app-warning:        #cd9309;
+  --app-warning-subtle: #fce8b3;
+  --app-danger:         #c01c28;
+  --app-danger-subtle:  #f9d3d4;
+
+  /* ── Bordes (Adwaita: visibles pero suaves) ── */
+  --app-border:         rgba(0, 0, 0, 0.10);
+  --app-border-strong:  rgba(0, 0, 0, 0.18);
+
+  /* ── Radios (GNOME: grandes y redondeados) ── */
+  --app-radius-xs:      4px;
+  --app-radius-sm:      6px;
+  --app-radius:         12px;
+  --app-radius-lg:      14px;
+  --app-radius-xl:      18px;
+  --app-radius-full:    9999px;
+
+  /* ── Sombras (Adwaita: moderadas) ── */
+  --app-shadow-sm:      0 1px 3px rgba(0, 0, 0, 0.07), 0 1px 2px rgba(0, 0, 0, 0.05);
+  --app-shadow:         0 2px 5px rgba(0, 0, 0, 0.10), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --app-shadow-md:      0 4px 8px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.07);
+  --app-shadow-lg:      0 10px 18px rgba(0, 0, 0, 0.14), 0 4px 6px rgba(0, 0, 0, 0.07);
+
+  /* ── Layout ── */
+  --app-titlebar-height:  47px;
+  --app-sidebar-width:    230px;
+  --app-content-max-w:    1100px;
+
+  /* ── Transiciones (Adwaita: ligeramente más suave) ── */
+  --app-transition:       200ms ease;
+  --app-transition-slow:  300ms ease;
+}
+
+/* Focus ring estilo GNOME — redondeado y sutil */
+[data-platform="ubuntu"] *:focus-visible {
+  outline: 2px solid var(--app-primary);
+  outline-offset: 2px;
+  border-radius: var(--app-radius-sm);
+}
+
+/* Scrollbar estilo GTK — overlay delgada */
+[data-platform="ubuntu"] .ap-scrollbar::-webkit-scrollbar { width: 5px; height: 5px; }
+[data-platform="ubuntu"] .ap-scrollbar::-webkit-scrollbar-track { background: transparent; }
+[data-platform="ubuntu"] .ap-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.22);
+  border-radius: var(--app-radius-full);
+}
+[data-platform="ubuntu"] .ap-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.38);
+}
+
+/* Headerbar/titlebar GNOME — separador más pronunciado */
+[data-platform="ubuntu"] .app-titlebar {
+  border-bottom: 1px solid var(--app-border-strong);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
