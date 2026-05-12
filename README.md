@@ -397,7 +397,7 @@ La app usa una barra de título personalizada con `decorations: false`. En i3, S
 ## Autor
 
 **Henry Valencia**  
-Biomedical Engineer | Python Automation | AI-assisted Document Processing
+Ingeniero biomédico | Automatización con Python | Procesamiento de documentos asistido por IA
 
 **Farid Prado**
 
