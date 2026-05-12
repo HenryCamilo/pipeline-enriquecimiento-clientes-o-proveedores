@@ -8,8 +8,6 @@ data/raw/excel/*.xlsx
 data/raw/excel/*.xls
 data/raw/excel/*.xlsm
 data/raw/excel/*.csv
-data/raw/facturas/*.pdf
-data/raw/facturas/*.PDF
 
 # Carpetas de salida generadas por el pipeline
 data/output/
