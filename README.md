@@ -1,4 +1,4 @@
-# Actualización Automática de Proveedores
+# Actualización Automática de Proveedores o Cliente en una empresa
 
 Herramienta de escritorio y CLI que extrae datos de **facturas, RUTs e invoices en PDF**, los cruza contra un Excel maestro de proveedores y actualiza automáticamente los campos faltantes o desactualizados.
 
